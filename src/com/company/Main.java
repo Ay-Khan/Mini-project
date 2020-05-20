@@ -45,7 +45,7 @@ import java.util.ArrayList;
 
                 try{
                    outStream.writeObject(pd);
-                   inputStream.readObject();
+                   pd=(PackageData)inputStream.readObject();
                    students=pd.getStudents();
                 }catch (Exception e){
                     e.printStackTrace();

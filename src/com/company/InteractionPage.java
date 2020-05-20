@@ -53,6 +53,7 @@ public class InteractionPage extends Container {
             btn2.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+
                     Main.frame.showFirstPage();
                 }
             });
@@ -66,7 +67,7 @@ public class InteractionPage extends Container {
     public void UpdateTArea() {
         studentlist=Main.students;
         for (int i = 0; i<studentlist.size(); i++) {
-            textArea.append(studentlist.get(i).toString());
+            textArea.append(studentlist.get(i).toString()+"\n");
         }
     }
 

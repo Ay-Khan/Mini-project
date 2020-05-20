@@ -64,7 +64,7 @@ public class AddPage extends Container {
                 student.setSurname(surname);
                 student.setAge(age);
                 Main.addStudent(student);
-                Main.frame.showFirstPage();
+
 
 
             }
